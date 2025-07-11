@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f1f1f1;
+        text-align: center;
+        padding-top: 100px;
+      }
+      h2 {
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Verifying your access to Affiliate Marketing School...</h2>
+    <p>Please wait while we match the best offer for your country.</p>
+
+    <script>
+      fetch("https://ipapi.co/json")
+        .then(res => res.json())
+        .then(data => {
+          const country = data.country;
+
+          // TapMob offer for the top countries
+          const tapmobLink = "https://lnktrckrs.com/cl/rQEswzCVaf2v";
+
+          if (["US", "CA", "GB", "DE", "AU"].includes(country)) {
+            window.location.href = tapmobLink;
+          } else {
+            window.location.href = "https://rockingfolders.com/affiliatemarketingschooler";
+          }
+        });
+    </script>
+  </body>
+</html>
