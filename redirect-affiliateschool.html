@@ -27,9 +27,12 @@
 
           // TapMob offer for the top countries
           const tapmobLink = "https://lnktrckrs.com/cl/rQEswzCVaf2v";
+          const pakistanLink = "https://www.directcpi.com/unlock/53525"; // Pakistan-specific
 
           if (["US", "CA", "GB", "DE", "AU"].includes(country)) {
             window.location.href = tapmobLink;
+            } else if (country === "PK") {
+        window.location.href = pakistanLink;
           } else {
             window.location.href = "https://rockingfolders.com/affiliatemarketingschooler";
           }
