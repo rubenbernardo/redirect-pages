@@ -27,12 +27,13 @@
 
           // TapMob offer for the top countries
           const tapmobLink = "https://lnktrckrs.com/cl/rQEswzCVaf2v";
-          const pakistanLink = "https://www.directcpi.com/unlock/53525"; // Pakistan-specific
+          // India & Pakistan offer (same destination)
+      const asiaLink = "https://www.directcpi.com/unlock/53525";
 
           if (["US", "CA", "GB", "DE", "AU"].includes(country)) {
             window.location.href = tapmobLink;
-            } else if (country === "PK") {
-        window.location.href = pakistanLink;
+         } else if (["PK", "IN"].includes(country)) {
+        window.location.href = asiaLink;
           } else {
             window.location.href = "https://rockingfolders.com/affiliatemarketingschooler";
           }
